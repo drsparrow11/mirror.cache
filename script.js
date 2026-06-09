@@ -1,4 +1,4 @@
-﻿const tracks = [
+const tracks = [
   {
     number: "01",
     title: "CICI LOVES YOU",
@@ -100,20 +100,63 @@
 ];
 
 const grid = document.querySelector("#trackGrid");
+const playlistList = document.querySelector("#playlistList");
 const playerCover = document.querySelector("#playerCover");
 const playerTitle = document.querySelector("#playerTitle");
 const playerTheme = document.querySelector("#playerTheme");
 const audioPlayer = document.querySelector("#audioPlayer");
+const lyricsTitle = document.querySelector("#lyricsTitle");
+const lyricsText = document.querySelector("#lyricsText");
+const prevTrack = document.querySelector("#prevTrack");
+const nextTrack = document.querySelector("#nextTrack");
+
+let activeIndex = 0;
+let lyricsByNumber = {};
+
+function parseLyrics(markdown) {
+  const sections = {};
+  const pattern = /^##\s+(\d{2})\.\s+(.+)$/gm;
+  const matches = [...markdown.matchAll(pattern)];
+
+  matches.forEach((match, index) => {
+    const start = match.index + match[0].length;
+    const end = matches[index + 1]?.index ?? markdown.length;
+    sections[match[1]] = markdown.slice(start, end).trim();
+  });
+
+  return sections;
+}
+
+async function loadLyrics() {
+  try {
+    const response = await fetch("lyrics.md");
+    if (!response.ok) throw new Error("Lyrics request failed");
+    lyricsByNumber = parseLyrics(await response.text());
+  } catch (error) {
+    lyricsByNumber = {};
+  }
+  setTrack(tracks[activeIndex]);
+}
+
+function updateLyrics(track) {
+  lyricsTitle.textContent = `${track.number}. ${track.title}`;
+  lyricsText.textContent = lyricsByNumber[track.number] || "Lyrics cache unavailable. Open lyrics.md directly from the player controls.";
+}
 
 function setTrack(track, shouldPlay = false) {
+  activeIndex = tracks.findIndex((item) => item.number === track.number);
   playerCover.src = track.image;
   playerCover.alt = `${track.title} cover`;
   playerTitle.textContent = track.title;
   playerTheme.textContent = track.theme;
   audioPlayer.src = track.audio;
+  updateLyrics(track);
 
-  document.querySelectorAll(".track-card").forEach((card) => {
-    card.classList.toggle("active", card.dataset.track === track.number);
+  document.querySelectorAll("[data-track]").forEach((item) => {
+    item.classList.toggle("active", item.dataset.track === track.number);
+    if (item.classList.contains("playlist-item")) {
+      item.setAttribute("aria-current", item.dataset.track === track.number ? "true" : "false");
+    }
   });
 
   if (shouldPlay) {
@@ -121,7 +164,12 @@ function setTrack(track, shouldPlay = false) {
   }
 }
 
-tracks.forEach((track) => {
+function moveTrack(step) {
+  const nextIndex = (activeIndex + step + tracks.length) % tracks.length;
+  setTrack(tracks[nextIndex], true);
+}
+
+function makeTrackCard(track) {
   const card = document.createElement("button");
   card.className = "track-card";
   card.type = "button";
@@ -136,9 +184,34 @@ tracks.forEach((track) => {
   `;
   card.addEventListener("click", () => {
     setTrack(track, true);
-    document.querySelector(".now-playing").scrollIntoView({ behavior: "smooth", block: "center" });
+    document.querySelector("#player").scrollIntoView({ behavior: "smooth", block: "start" });
   });
-  grid.appendChild(card);
+  return card;
+}
+
+function makePlaylistItem(track) {
+  const item = document.createElement("button");
+  item.className = "playlist-item";
+  item.type = "button";
+  item.dataset.track = track.number;
+  item.innerHTML = `
+    <img src="${track.image}" alt="" loading="lazy">
+    <span>
+      <small>${track.number}</small>
+      <strong>${track.title}</strong>
+    </span>
+  `;
+  item.addEventListener("click", () => setTrack(track, true));
+  return item;
+}
+
+tracks.forEach((track) => {
+  grid.appendChild(makeTrackCard(track));
+  playlistList.appendChild(makePlaylistItem(track));
 });
 
-setTrack(tracks[0]);
+prevTrack.addEventListener("click", () => moveTrack(-1));
+nextTrack.addEventListener("click", () => moveTrack(1));
+audioPlayer.addEventListener("ended", () => moveTrack(1));
+
+loadLyrics();

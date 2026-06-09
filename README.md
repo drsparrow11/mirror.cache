@@ -6,14 +6,16 @@ Static GitHub Pages site for Cici and the `MIRROR.CACHE` album.
 
 ```text
 index.html
+social.html
 styles.css
 script.js
+lyrics.md
 debut-stream-script.md
 assets/images/
 assets/audio-mp3/
 ```
 
-Open `index.html` locally or publish this folder with GitHub Pages.
+Open `index.html` locally or publish this folder with GitHub Pages. `social.html` is Cici's social/profile page, and `index.html#player` is the album player with cover art, playlist switching, MP3 playback, and lyrics.
 
 ## GitHub Pages Setup
 

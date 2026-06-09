@@ -23,6 +23,7 @@
         </span>
       </a>
       <nav aria-label="Primary navigation">
+        <a href="social.html">Social</a>
         <a href="#archive">Archive</a>
         <a href="#story">Story</a>
         <a href="#cici">Cici</a>
@@ -62,16 +63,37 @@
         </div>
       </section>
 
-      <section class="now-playing" aria-label="Audio player">
-        <div class="player-art">
-          <img id="playerCover" src="assets/images/CICI LOVES YOU.png" alt="Current track cover" />
+      <section class="archive-player" id="player" aria-label="MIRROR.CACHE player">
+        <div class="player-now">
+          <div class="player-art">
+            <img id="playerCover" src="assets/images/CICI LOVES YOU.png" alt="Current track cover" />
+          </div>
+          <div class="player-main">
+            <p class="eyebrow">Now playing</p>
+            <h2 id="playerTitle">CICI LOVES YOU</h2>
+            <p id="playerTheme">The first smile. Pink lights, karaoke chaos, and the question hiding under the sparkle.</p>
+            <audio id="audioPlayer" controls preload="metadata" src="assets/audio-mp3/CICI LOVES YOU.mp3"></audio>
+            <div class="player-controls" aria-label="Playlist controls">
+              <button class="icon-button" id="prevTrack" type="button" aria-label="Previous track">Prev</button>
+              <button class="icon-button" id="nextTrack" type="button" aria-label="Next track">Next</button>
+              <a class="button small" href="lyrics.md">Open Lyrics File</a>
+            </div>
+          </div>
         </div>
-        <div class="player-main">
-          <p class="eyebrow">Now playing</p>
-          <h2 id="playerTitle">CICI LOVES YOU</h2>
-          <p id="playerTheme">The first smile. Pink lights, karaoke chaos, and the question hiding under the sparkle.</p>
-          <audio id="audioPlayer" controls preload="metadata" src="assets/audio-mp3/CICI LOVES YOU.mp3"></audio>
-        </div>
+        <aside class="playlist-panel" aria-label="Track playlist">
+          <div class="panel-heading">
+            <p class="eyebrow">Playlist</p>
+            <strong>Archive order</strong>
+          </div>
+          <div class="playlist-list" id="playlistList"></div>
+        </aside>
+        <article class="lyrics-panel" aria-labelledby="lyricsTitle">
+          <div class="panel-heading">
+            <p class="eyebrow">Lyrics cache</p>
+            <strong id="lyricsTitle">01. CICI LOVES YOU</strong>
+          </div>
+          <pre id="lyricsText">Loading lyrics...</pre>
+        </article>
       </section>
 
       <section id="archive" class="archive-section" aria-labelledby="archive-title">
