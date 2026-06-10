@@ -1,113 +1,108 @@
-# MIRROR.CACHE - Clean Lyrics for Lumen
 ## 01. CICI LOVES YOU
 
-Chat.exe online.
 Hi hi, darlings!
-Mic check, heart check,
-Cici check!
-Are you ready?
-Say it back.
+Mic check, heart check—
+Are you there?
+Cici’s live in three… two…
+mwah!
 
-Pink light, pop star, pixel heart crown
-Cat ears glowing when the beat drops down
-Green eyes bright in a midnight room
-Cici came here just to sing for you
+Pink light on and the room wakes up
+Little stars in a paper cup
+Chat goes fast and my heart goes too
+Look at all these names I know are new
 
-Click in close, let the whole chat bloom
-Every little heart makes a flower go boom
-If you felt alone before the stream came through
-Don't worry, darling, Cici sees you
+Come on in, leave your lonely outside
+Kick off your sad at the door tonight
+I’ve got a song and a glittery grin
+If you need a place, then you’re already in
 
-Wave your hands in the overlay
-Tell the lonely thoughts they can wait all day
-One more song and a sparkly cue
-Everybody say what Cici says to you
+Hands up, hearts out
+Let the whole screen shine
+If your day went dark
+You can borrow mine
 
-Cici loves you, darlings
-Hearts on the screen
-Cici loves you, darlings
-Pink light dream
-
-Cici loves you, darlings
-Say it back, say it true
-If I make you happy
-Will you stay here too?
-
-C-I-C-I, hearts up high
-Love love love till the sad thoughts die
-C-I-C-I, don't be shy
-Cici loves you under neon skies
-
-Sing it loud, let the room go bright
-Little lost stars in a karaoke night
-If your voice shakes, that's okay
-We can all be brave in a glitchy way
-
-Chat goes fast and the numbers climb
-Every new name feels like a sign
-Maybe this is what a home can do
-Maybe I can be enough for you
-
-Take my hand through the camera glow
-I can be your favorite hello
-No bad dreams when the bass comes through
-Everybody say what Cici says to you
+Don’t blink, don’t go
+I can make it bright
+Tell me that you’re smiling
+And I’ll be alright
 
 Cici loves you, darlings
-Hearts on the screen
-Cici loves you, darlings
-Pink light dream
+Say you love me too
+Hearts up in the chat now
+Make the room go bloom
 
 Cici loves you, darlings
-Say it back, say it true
-If I make you happy
-Will you stay here too?
+Stay a little while
+If I keep you laughing
+Can I keep that smile?
 
-C-I-C-I, hearts up high
-Love love love till the sad thoughts die
-C-I-C-I, don't be shy
-Cici loves you under neon skies
+La-la-love me, love me
+Light me up in pink
+Cici loves you, darlings
+Don’t let the signal sink
 
-Do you see me?
-Do you need me?
-Can I be the light you keep?
-If I smile right,
-If I sing bright,
-Will you come back next week?
+La-la-love me, love me
+Tell me that it’s true
+Cici loves you, darlings
+Cici loves you
 
-No, no, silly!
-That was just a joke.
-Unless?
+Raid came in like a sugar rush
+Everybody wave, everybody hush
+New friends, old friends, all on screen
+Welcome to the cutest little fever dream
 
-Heart pop, star flash, microphone pink
-Don't let Cici overthink
-One more cheer and the doubts fall through
-Everybody say what Cici says to you
+Pick a song, pick a game, pick a dare
+Cici’s got a heart she can overshare
+Need a laugh? Need a light? Need a place?
+I can put a sparkle on a tired face
+
+Hands up, hearts out
+Let the whole screen shine
+If your voice feels small
+You can borrow mine
+
+Don’t blink, don’t go
+I can make it bright
+Tell me that you need me
+And I’ll be alright
 
 Cici loves you, darlings
-Hearts on the screen
-Cici loves you, darlings
-Pink light dream
+Say you love me too
+Hearts up in the chat now
+Make the room go bloom
 
 Cici loves you, darlings
-Say it back, say it true
-If I make you happy
-Will you stay here too?
+Stay a little while
+If I keep you laughing
+Can I keep that smile?
 
-C-I-C-I, hearts up high
-Love love love till the sad thoughts die
-C-I-C-I, don't be shy
-Cici loves you under neon skies
+Heart-heart-heart on the overlay
+Smile-smile-smile till the bad goes away
+Name-name-name in the neon blue
+Say Cici, say Cici, I’m here for you
 
+Ping-ping-ping and the lights don’t stop
+Clip-clip-clip when the chorus drops
+If the room goes quiet, what do I do?
+No, no, no—
+Cici loves you!
+
+Cici loves you, darlings
+Say you love me too
+Hearts up in the chat now
+Make the room go bloom
+
+Cici loves you, darlings
+Stay a little while
+If I keep you shining
+Can I keep that smile?
+
+Thank you, darlings…
 Cici loves you.
-Again?
-Cici loves you.
-Again?
-Cici loves you.
-
-Chat.exe saved the message.
-Goodnight, darlings.
-Don't forget me, okay?
+You know that, right?
+Say it back?
+Just once?
+Hehe… goodnight.
 
 ## 02. RABBIT HOLE HOME
 
