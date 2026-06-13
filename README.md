@@ -15,7 +15,7 @@ assets/images/
 assets/audio-mp3/
 ```
 
-Open `index.html` locally or publish this folder with GitHub Pages. `social.html` is Cici's social/profile page, and `index.html#player` is the album player with cover art, playlist switching, MP3 playback, and lyrics.
+Open `index.html` locally or publish this folder with GitHub Pages. `social.html` is Cici's social/profile page with Twitch channel links, stream widgets, feed posts, and a track-by-track cache feed. `index.html#player` is the album player with cover art, playlist switching, MP3 playback, and lyrics.
 
 ## GitHub Pages Setup
 

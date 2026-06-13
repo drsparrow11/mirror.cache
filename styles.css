@@ -648,6 +648,109 @@ audio {
   color: var(--muted);
 }
 
+.twitch-section {
+  margin-top: 1rem;
+}
+
+.twitch-panel {
+  display: grid;
+  grid-template-columns: minmax(18rem, 1fr) minmax(17rem, 0.85fr) minmax(16rem, 0.8fr);
+  gap: 1rem;
+  align-items: stretch;
+  border: 1px solid var(--line-soft);
+  background:
+    linear-gradient(135deg, rgba(145, 70, 255, 0.16), rgba(255, 77, 172, 0.14)),
+    var(--panel);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.twitch-copy,
+.twitch-terminal,
+.twitch-rules article {
+  min-width: 0;
+  border: 1px solid var(--line-soft);
+  background: rgba(9, 8, 14, 0.62);
+}
+
+.twitch-copy {
+  padding: 1rem;
+}
+
+.twitch-copy h2 {
+  font-family: var(--mono);
+  font-size: clamp(2rem, 3.6vw, 3.6rem);
+  text-shadow: 0 0 28px rgba(145, 70, 255, 0.55);
+}
+
+.twitch-copy p:not(.eyebrow) {
+  color: #f2d9e8;
+}
+
+.twitch-terminal {
+  overflow: hidden;
+  font-family: var(--mono);
+}
+
+.terminal-bar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--lime);
+  background: rgba(255, 77, 172, 0.16);
+  font-size: 0.78rem;
+}
+
+.terminal-body {
+  padding: 1rem;
+}
+
+.terminal-body strong {
+  display: block;
+  color: var(--text);
+  font-size: 1.4rem;
+}
+
+.terminal-body p {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.terminal-body ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.terminal-body li {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.42rem 0;
+  border-top: 1px solid var(--line-soft);
+  color: #f8d9e9;
+  font-size: 0.84rem;
+}
+
+.terminal-body li span {
+  color: var(--lime);
+}
+
+.twitch-rules {
+  display: grid;
+  gap: 1rem;
+}
+
+.twitch-rules article {
+  padding: 1rem;
+}
+
+.twitch-rules p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .social-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -658,6 +761,48 @@ audio {
 
 .feed-card {
   min-height: 12rem;
+}
+
+.fun-post {
+  background:
+    linear-gradient(135deg, rgba(255, 77, 172, 0.22), rgba(87, 255, 232, 0.08)),
+    var(--panel);
+}
+
+.sticker-post {
+  min-height: 10rem;
+  border-color: rgba(168, 255, 105, 0.36);
+  background:
+    linear-gradient(135deg, rgba(168, 255, 105, 0.08), rgba(255, 77, 172, 0.14)),
+    var(--panel);
+}
+
+.sticker-post .post-copy {
+  color: #ffe7f4;
+  font-family: var(--mono);
+}
+
+.mini-player-card {
+  border-color: rgba(87, 255, 232, 0.32);
+  background:
+    linear-gradient(180deg, rgba(87, 255, 232, 0.08), rgba(255, 77, 172, 0.12)),
+    var(--panel);
+}
+
+.mini-player-card strong {
+  display: block;
+  margin: 0.45rem 0;
+  font-family: var(--mono);
+  font-size: 1.25rem;
+}
+
+.pixel-controls {
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--line-soft);
+  color: var(--lime);
+  font-family: var(--mono);
+  font-size: 0.78rem;
 }
 
 .featured-post {
@@ -790,6 +935,7 @@ audio {
   .story-steps,
   .archive-player,
   .social-hero,
+  .twitch-panel,
   .social-grid,
   .stream-grid,
   .track-social-grid {
