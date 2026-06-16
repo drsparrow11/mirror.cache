@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sparrowxecho.github.io/cici-mirror-cache/sitemap.xml

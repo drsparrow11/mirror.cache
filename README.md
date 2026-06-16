@@ -2,6 +2,14 @@
 
 Static GitHub Pages site for Cici and the `MIRROR.CACHE` album.
 
+Default SEO metadata currently assumes this public URL:
+
+```text
+https://sparrowxecho.github.io/cici-mirror-cache/
+```
+
+If the final GitHub Pages URL is different, replace that URL in `index.html`, `social.html`, `robots.txt`, and `sitemap.xml` before publishing.
+
 ## Files
 
 ```text
@@ -11,6 +19,12 @@ styles.css
 script.js
 lyrics.md
 debut-stream-script.md
+robots.txt
+sitemap.xml
+site.webmanifest
+favicon.svg
+humans.txt
+SEO_CHECKLIST.md
 assets/images/
 assets/audio-mp3/
 ```

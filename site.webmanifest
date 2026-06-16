@@ -1,0 +1,17 @@
+{
+  "name": "MIRROR.CACHE",
+  "short_name": "Cici",
+  "description": "Cici's MIRROR.CACHE album archive, social page, lyrics, and Twitch links.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07030a",
+  "theme_color": "#ff4aa2",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

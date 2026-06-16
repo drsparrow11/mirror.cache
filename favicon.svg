@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Cici CC icon">
+  <rect width="128" height="128" rx="24" fill="#08040d"/>
+  <path d="M25 33h78v62H25z" fill="#1a0713" stroke="#ff4aa2" stroke-width="5"/>
+  <path d="M42 50c-13 0-22 8-22 20s9 20 22 20c8 0 14-3 18-8l-9-9c-2 3-5 5-9 5-5 0-9-3-9-8s4-8 9-8c4 0 7 2 9 5l9-9c-4-5-10-8-18-8zm45 0c-13 0-22 8-22 20s9 20 22 20c8 0 14-3 18-8l-9-9c-2 3-5 5-9 5-5 0-9-3-9-8s4-8 9-8c4 0 7 2 9 5l9-9c-4-5-10-8-18-8z" fill="#ffd7ea"/>
+  <path d="M64 27l6 12 13 2-10 9 3 13-12-7-12 7 3-13-10-9 13-2z" fill="#92ff5c"/>
+  <path d="M19 17h14v10H19zm76 84h14v10H95z" fill="#ff4aa2"/>
+</svg>
