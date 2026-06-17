@@ -31,6 +31,8 @@ assets/audio-mp3/
 
 Open `index.html` locally or publish this folder with GitHub Pages. `social.html` is Cici's social/profile page with Twitch channel links, stream widgets, feed posts, and a track-by-track cache feed. `index.html#player` is the album player with cover art, playlist switching, MP3 playback, and lyrics.
 
+The album page includes a MIRROR.CACHE splash screen inspired by the other BEFORE THE SIGNAL FADES chapter sites. It can be dismissed with `Enter the Cache`, the `skip to player` link, Escape, or by opening a direct hash link like `index.html#player`.
+
 ## GitHub Pages Setup
 
 1. Create a repository, for example `cici-mirror-cache`.

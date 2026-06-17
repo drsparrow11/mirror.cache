@@ -109,9 +109,39 @@ const lyricsTitle = document.querySelector("#lyricsTitle");
 const lyricsText = document.querySelector("#lyricsText");
 const prevTrack = document.querySelector("#prevTrack");
 const nextTrack = document.querySelector("#nextTrack");
+const bootScreen = document.querySelector("#bootScreen");
+const enterButton = document.querySelector("#enterButton");
+const peekLink = document.querySelector(".peek-link");
 
 let activeIndex = 0;
 let lyricsByNumber = {};
+
+function closeBootScreen() {
+  if (!bootScreen) return;
+  bootScreen.classList.add("hidden");
+}
+
+if (enterButton) {
+  enterButton.addEventListener("click", closeBootScreen);
+}
+
+if (peekLink) {
+  peekLink.addEventListener("click", closeBootScreen);
+}
+
+if (bootScreen) {
+  bootScreen.addEventListener("click", (event) => {
+    if (event.target === bootScreen) closeBootScreen();
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeBootScreen();
+  });
+
+  if (window.location.hash && window.location.hash !== "#top") {
+    closeBootScreen();
+  }
+}
 
 function parseLyrics(markdown) {
   const sections = {};
